@@ -1,5 +1,5 @@
 """
-basic_generator_case.py
+basic_producer_case.py
 
 Generate some streaming buzz messages. 
 """
@@ -31,7 +31,7 @@ load_dotenv()
 #####################################
 
 # Define a function to fetch the message interval from the environment
-def get_message_interval() -> int:
+def get_message_interval():    
     """
     Fetch message interval from environment or use a default value.
 
@@ -48,8 +48,8 @@ def get_message_interval() -> int:
     To use handy functions like this, import the os module 
     from the Python Standard Library (see above).
     """
-    return_value: str = os.getenv("MESSAGE_INTERVAL_SECONDS", 3)
-    interval: int = int(return_value)
+    return_value = os.getenv("MESSAGE_INTERVAL_SECONDS", 3)
+    interval = int(return_value)
     logger.info(f"Messages will be sent every {interval} seconds.")
     return interval
 
@@ -108,7 +108,7 @@ def main() -> None:
     
     # Call the function we defined above to get the message interval
     # Assign the return value to a variable called interval_secs
-    interval_secs: int = get_message_interval()
+    interval_secs = get_message_interval()
 
     for message in generate_messages():
         logger.info(message)
