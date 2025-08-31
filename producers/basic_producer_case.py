@@ -128,3 +128,12 @@ def main() -> None:
 if __name__ == "__main__":
     # Call the main function by writing its name followed by parentheses.
     main()
+
+    # this should be italic now
+import os
+
+def demo(x):
+    if x > 0:
+        return "ok"
+    return "nope"
+
