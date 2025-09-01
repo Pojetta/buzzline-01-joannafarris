@@ -84,3 +84,7 @@ We will get a good amount of practice.
 This project is licensed under the MIT License as an example project. 
 You are encouraged to fork, copy, explore, and modify the code as you like. 
 See the [LICENSE](LICENSE.txt) file for more.
+
+
+python3 -m producers.basic_producer_joannafarris
+python3 -m consumers.basic_consumer_joannafarris
