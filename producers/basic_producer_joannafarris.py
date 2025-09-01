@@ -1,5 +1,5 @@
 """
-basic_producer_case.py
+basic_producer_joannafarris.py
 
 Generate some streaming buzz messages. 
 """
@@ -63,14 +63,12 @@ ADJECTIVES: list = ["fantastic", "challenging", "inspiring", "confusing", "brill
 ACTIONS: list = ["analyzed", "tested", "debugged", "designed", "studied"]
 TOPICS: list = ["a dataset", "a model", "a query", "an API", "a notebook"]
 
-
 #####################################
 # Define a function to generate buzz messages
 #####################################
 
-
 def generate_messages():
-    
+
     """
     Generate a stream of buzz messages.
 
