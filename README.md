@@ -33,13 +33,16 @@ Logs are written to `logs/project_log.log`. The `logs/` folder is **git-ignored*
 Open two terminals (one for the producer, one for the consumer).
 
 
-**Producer:**
-source .venv/bin/activate
-python3 -m producers.basic_producer_joannafarris
+**Producer:**  
+source .venv/bin/activate  
+python3 -m producers  
+basic_producer_joannafarris  
 
-**Consumer:**
-source .venv/bin/activate
-python3 -m consumers.basic_consumer_joannafarris
+**Consumer:**  
+source .venv/bin/activate  
+python3 -m consumers  
+basic_consumer_joannafarris  
+
 
 ## Consumer Alerts
 
