@@ -15,8 +15,6 @@ This project includes **custom streaming components** that generate and monitor 
 
 ### Create and Activate Virtual Environment
 
-**macOS / Linux**
-```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt   # or: pip install loguru python-dotenv
@@ -25,8 +23,7 @@ pip install -r requirements.txt   # or: pip install loguru python-dotenv
 
 Create a `.env` in the repo root:
 
-```ini
-# message production interval in seconds
+### message production interval in seconds
 MESSAGE_INTERVAL_SECONDS=3
 
 Logs are written to `logs/project_log.log`. The `logs/` folder is **git-ignored**.
@@ -35,7 +32,6 @@ Logs are written to `logs/project_log.log`. The `logs/` folder is **git-ignored*
 
 Open two terminals (one for the producer, one for the consumer).
 
-### macOS / Linux
 
 **Producer:**
 source .venv/bin/activate
@@ -69,6 +65,6 @@ The consumer raises alerts for special messages:
 
 Keep logs out of Git by adding these to your `.gitignore`: 
 
-logs/
+logs/  
 *.log
 
